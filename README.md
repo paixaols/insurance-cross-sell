@@ -33,7 +33,7 @@ A learning to rank algorithm was used to sort the clients based on their propens
 
 * Clients previously involved in a car injury are more inclined to purchase the auto insurance.
 * Younger people are less inclined to purchase the auto insurance.
-* Clients who already an auto insurance are not prone to change their insurance company.
+* Clients who already have an auto insurance are not prone to change their insurance company.
 
 # 4. Machine Learning Model Applied
 
@@ -56,8 +56,8 @@ The XGBoost Classifier presented the best generalization performance, it was, th
 The company’s sales team need to contact those clients more prone to purchase the new insurance in order to make an effective use of resources. Then, a hypothetical situation was imagined where the company’s stakeholders wanted to answer the following questions:
 
 1. What percentage of interested clients can we reach contacting 20,000 clients?
-2. What would be that percentage if contacting 40,000 clients?
-3. How many contacts the selling team must perform to reach 80% of the clients?
+2. What would be the percentage of interested clients if contacting 40,000 clients?
+3. How many contacts the sales team must perform to reach 80% of the interested clients?
 
 The answers provided by the model were (according to the cumulative gain and lift curves above):
 
@@ -67,7 +67,7 @@ The answers provided by the model were (according to the cumulative gain and lif
 
 # 7. Data product
 
-The company’s sale team will use the prediction proposed here on a regular basis. To facilitate usage, the model was deployed on Heroku and made accessible via an API. Also, a custom Google Sheet spreadsheet can access the API using Google Script to post a request. For the sake of illustration, a screenshot of the spreadsheet is presented below. Note the menu Insurance, which creates the column score, representing the client’s propensity to purchase the auto insurance.
+The company’s sales team will use the prediction proposed here on a regular basis. To facilitate usage, the model was deployed on Heroku and made accessible via an API. Also, a custom Google Sheet spreadsheet can access the API using Google Script to post a request. For the sake of illustration, a screenshot of the spreadsheet is presented below. Note the menu *Insurance*, which creates, via the *Get prediction* function, the column score. Such score retrieved by the API represents the client’s propensity to purchase the auto insurance.
 
 <img src="/reports/figures/gsheet_screenshot.png" width="900">
 
